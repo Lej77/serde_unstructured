@@ -8,7 +8,7 @@ members = [
 
 [workspace.package]
 # When updating:
-# - Generate README.md using `cargo readme --no-license > README.md`
+# - Generate README.md using `cargo rdme` (previously: `cargo readme --no-license > README.md`)
 # - Generate documentation using `cargo +nightly doc --features docs` to check for broken links.
 # - Test all features using `cargo hack test --feature-powerset --skip full --skip default --skip docs --exclude-all-features`
 version = "0.1.0"
