@@ -37,8 +37,8 @@ Once you have reached the data for the field you are interested in you can:
 
 This project is released under either:
 
-- [MIT License](https://github.com/Lej77/cast_trait_object/blob/master/LICENSE-MIT)
-- [Apache License (Version 2.0)](https://github.com/Lej77/cast_trait_object/blob/master/LICENSE-APACHE)
+- [MIT License](https://github.com/Lej77/serde_unstructured/blob/master/LICENSE-MIT)
+- [Apache License (Version 2.0)](https://github.com/Lej77/serde_unstructured/blob/master/LICENSE-APACHE)
 
 at your choosing.
 
