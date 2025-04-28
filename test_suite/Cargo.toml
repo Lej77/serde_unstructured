@@ -1,0 +1,18 @@
+[package]
+name = "test_suite"
+version = "0.1.0"
+edition = "2021"
+publish = false
+# Inspired by the test_suite crate for `serde`: https://github.com/serde-rs/serde/tree/master/test_suite
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+
+[dev-dependencies]
+serde_unstructured = { path = "../serde_unstructured", features = ["json"] }
+serde = { version = "1.0.117", features = ["derive", "std"] }
+serde_json = { version = "1.0.59" }
+
+trybuild = "1.0.49"

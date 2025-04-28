@@ -1,0 +1,5 @@
+error: SerdeView can't project into fields that are using custom deserialization, skip the field manually using a `#[serde_view(skip)]` attribute or use an empty `#[serde_view()]` attribute to ignore any `#[serde]` attributes.
+ --> tests/compile_fail/with_attr.rs:5:5
+  |
+5 |     field: u8,
+  |     ^^^^^

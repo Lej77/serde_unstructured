@@ -1,0 +1,5 @@
+error: SerdeView can't project into fields that are using custom deserialization, remove any `#[serde_view(with = "module")]` or #[serde_view(deserialize_with = "path")] attribute.
+ --> tests/compile_fail/with_attr_custom.rs:5:5
+  |
+5 |     field: u8,
+  |     ^^^^^

@@ -1,0 +1,35 @@
+error: `SerdeView` failed at `serde` attribute: unknown serde field attribute `what`
+
+         = help: skip a field using a `#[serde_view(skip)]` attribute or use an empty `#[serde_view()]` attribute to ignore any `#[serde]` attributes.
+
+ --> tests/compile_fail/invalid_serde_attr_multiple.rs:4:13
+  |
+4 |     #[serde(what)]
+  |             ^^^^
+
+error: `SerdeView` failed at `serde` attribute: unknown serde field attribute `are`
+
+         = help: skip a field using a `#[serde_view(skip)]` attribute or use an empty `#[serde_view()]` attribute to ignore any `#[serde]` attributes.
+
+ --> tests/compile_fail/invalid_serde_attr_multiple.rs:6:13
+  |
+6 |     #[serde(are)]
+  |             ^^^
+
+error: `SerdeView` failed at `serde` attribute: unknown serde field attribute `you`
+
+         = help: skip a field using a `#[serde_view(skip)]` attribute or use an empty `#[serde_view()]` attribute to ignore any `#[serde]` attributes.
+
+ --> tests/compile_fail/invalid_serde_attr_multiple.rs:8:13
+  |
+8 |     #[serde(you())]
+  |             ^^^
+
+error: `SerdeView` failed at `serde` attribute: unknown serde field attribute `doing`
+
+         = help: skip a field using a `#[serde_view(skip)]` attribute or use an empty `#[serde_view()]` attribute to ignore any `#[serde]` attributes.
+
+  --> tests/compile_fail/invalid_serde_attr_multiple.rs:10:13
+   |
+10 |     #[serde(doing = to::this::attribute)]
+   |             ^^^^^

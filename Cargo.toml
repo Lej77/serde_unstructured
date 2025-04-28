@@ -1,0 +1,23 @@
+[workspace]
+resolver = "2"
+members = [
+    "serde_unstructured",
+    "serde_unstructured_derive",
+    "test_suite",
+]
+
+[workspace.package]
+# When updating:
+# - Generate README.md using `cargo readme --no-license > README.md`
+# - Generate documentation using `cargo +nightly doc --features docs` to check for broken links.
+# - Test all features using `cargo hack test --feature-powerset --skip full --skip default --skip docs --exclude-all-features`
+version = "0.1.0"
+authors = ["Lej77 <31554212+Lej77@users.noreply.github.com>"]
+license = "MIT OR Apache-2.0"
+edition = "2021"
+keywords = ["serde", "serialization", "no_std"]
+categories = ["encoding"]
+description = """
+Use a derive macro similar to serde to only verify that certain parts of some data follows a certain structure.
+Allows handling unstructured data ergonomically by assuming it is similar in structure to a struct that has derived serde traits.
+"""

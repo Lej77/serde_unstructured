@@ -1,0 +1,7 @@
+error: The `SerdeView` derive macro can only be applied to structs.
+ --> tests/compile_fail/fail_enum.rs:2:10
+  |
+2 | #[derive(serde_unstructured::SerdeView)]
+  |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: this error originates in the derive macro `serde_unstructured::SerdeView` (in Nightly builds, run with -Z macro-backtrace for more info)

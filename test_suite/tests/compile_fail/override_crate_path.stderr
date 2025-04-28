@@ -1,0 +1,51 @@
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `path_that_does_not_exists`
+ --> tests/compile_fail/override_crate_path.rs:3:22
+  |
+3 | #[serde_view(crate = "path_that_does_not_exists::where_is_this")]
+  |                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `path_that_does_not_exists`
+  |
+  = help: if you wanted to use a crate named `path_that_does_not_exists`, use `cargo add path_that_does_not_exists` to add it to your `Cargo.toml`
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `path_that_does_not_exists`
+ --> tests/compile_fail/override_crate_path.rs:3:22
+  |
+3 | #[serde_view(crate = "path_that_does_not_exists::where_is_this")]
+  |                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `path_that_does_not_exists`
+  |
+  = help: if you wanted to use a crate named `path_that_does_not_exists`, use `cargo add path_that_does_not_exists` to add it to your `Cargo.toml`
+help: consider importing this struct
+  |
+2 + use serde_unstructured::ZeroSizedProjectionPath;
+  |
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `path_that_does_not_exists`
+ --> tests/compile_fail/override_crate_path.rs:3:22
+  |
+3 | #[serde_view(crate = "path_that_does_not_exists::where_is_this")]
+  |                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `path_that_does_not_exists`
+  |
+  = help: if you wanted to use a crate named `path_that_does_not_exists`, use `cargo add path_that_does_not_exists` to add it to your `Cargo.toml`
+help: consider importing this enum
+  |
+2 + use serde_unstructured::ProjectionPathSegment;
+  |
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `path_that_does_not_exists`
+ --> tests/compile_fail/override_crate_path.rs:3:22
+  |
+3 | #[serde_view(crate = "path_that_does_not_exists::where_is_this")]
+  |                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `path_that_does_not_exists`
+  |
+  = help: if you wanted to use a crate named `path_that_does_not_exists`, use `cargo add path_that_does_not_exists` to add it to your `Cargo.toml`
+help: consider importing this enum
+  |
+2 + use serde_unstructured::MaybeStatic;
+  |
+
+error[E0223]: ambiguous associated type
+ --> tests/compile_fail/override_crate_path.rs:2:10
+  |
+2 | #[derive(serde_unstructured::SerdeView)]
+  |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: this error originates in the derive macro `serde_unstructured::SerdeView` (in Nightly builds, run with -Z macro-backtrace for more info)
