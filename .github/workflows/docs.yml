@@ -12,12 +12,10 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: deploy
-  cancel-in-progress: false
+  group: docs
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -53,8 +51,12 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: target/doc
+
   deploy:
     name: Deploy
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
